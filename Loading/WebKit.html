@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webkit</title>
+  <style>
+    #boxes div {
+      border: 2px solid black;
+      padding: 10px;
+      margin: 5px;
+      width: 200px;
+      text-align: center;
+      background: #eee;
+    }
+
+
+/* section_2 */
+    .section2 {
+      -webkit-transform: scale(0.5);
+    }
+
+    .section2:hover {
+      -webkit-transform: scale(1);
+    }
+/* section_2 */
+
+
+
+/* section_3 */
+
+  /* section_3 */
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>1.簡單的陰影</h2>
+        <img src="https://picsum.photos/100/100/?random=10" class="b-block w-100"
+          style="-webkit-transform:rotate(5deg);-webkit-box-shadow:10px 10px 5px #888;" />
+      </div>
+      <div class="col-12">
+        <h2>2.翻轉與彈出</h2>
+        <img src="https://picsum.photos/300/300/?random=15" class="b-block w-100 section2">
+      </div>
+      <div class="col-12">
+        <h2>3.帶動畫效果的圖片翻轉</h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="boxes">
+    <div style="-webkit-border-radius:15px;">
+      All sides
+    </div>
+    <div style="-webkit-border-bottom-left-radius:15px;-webkit-border-top-right-radius:15px;">
+      Opposite corners
+    </div>
+    <div style="-webkit-border-top-left-radius:15px;-webkit-border-top-right-radius:15px;">
+      Top
+    </div>
+    <div style="-webkit-border-top-right-radius:15px;-webkit-border-bottom-right-radius:15px;">
+      Side
+    </div>
+  </div>
+
+</body>
+
+</html>
